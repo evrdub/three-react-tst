@@ -1,3 +1,4 @@
+import { indexRoutes } from '../../utils/indexRoutes'
 import { HeaderContainer, StyledLink } from './stylesHeader'
 
 export const Header = () => {
@@ -12,8 +13,9 @@ export const Header = () => {
 
     return (
         <HeaderContainer>
-            <Btn path="/" text="Home" />
-            <Btn path="/frame" text="3D View" />
+            <Btn path={indexRoutes['Home']} text="Home" />
+            <Btn path={indexRoutes['Vanilla']} text="Vanilla Three JS" />
+            <Btn path={indexRoutes['ReactTF']} text="react-three-fiber" />
         </HeaderContainer>
     )
 }
