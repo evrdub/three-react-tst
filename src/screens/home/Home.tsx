@@ -1,7 +1,5 @@
-const Home = () => {
+export default function Home() {
     const msg: string = 'This is a test project for the Three JS in a React App :)'
 
-    return <>{msg}</>
+    return <div style={{ color: 'black' }}>{msg}</div>
 }
-
-export default Home

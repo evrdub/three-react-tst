@@ -1,13 +1,13 @@
 import Helico from '../../assets/helicopter.svg'
 
 import { FrameScreenContainer, Heli, HeliContainer, SceneContainer } from './stylesFrameScreen'
-import Scene from '../../components/Scene'
+import ThreeScene from '../../components/three-scene/ThreeScene'
 
-export default function FrameScreen() {
+export default function FrameScreenVanilla() {
     return (
         <FrameScreenContainer>
-            <SceneContainer>
-                <Scene />
+            <SceneContainer id="scene">
+                <ThreeScene />
             </SceneContainer>
 
             <HeliContainer>

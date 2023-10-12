@@ -7,14 +7,9 @@ export const HeaderContainer = styled.div`
     align-content: flex-start;
     align-items: center;
     width: 100%;
-    height: 3rem;
+    height: 7vh;
     background-color: #23252b;
 `
-
-// export const HeaderLogo = styled.div`
-//     padding: 10px;
-//     height: 80%;
-// `
 
 export const StyledLink = styled(Link)`
     display: inline-block;
