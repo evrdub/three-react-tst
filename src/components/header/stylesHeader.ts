@@ -19,6 +19,12 @@ export const StyledLink = styled(Link)`
     color: #fff;
     text-decoration: none;
     border-radius: 8px;
+    max-height: 80%;
+    font-size: 1rem;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 
     &:hover {
         background-color: #555;
