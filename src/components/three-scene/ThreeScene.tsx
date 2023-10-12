@@ -1,7 +1,7 @@
 import { useRef, useEffect } from 'react'
 import * as THREE from 'three'
 
-const ThreeScene = () => {
+export default function ThreeScene() {
     const containerRef = useRef<HTMLDivElement>(null)
 
     // Create renderer, scene, camera
@@ -43,11 +43,10 @@ const ThreeScene = () => {
         }
 
         function handleResize() {
-            console.log('resize')
             const div = document.getElementById('scene')
-
+            if (!div) return
             const newWidth = div?.clientWidth
-            const newHeight = div?.clientHeight - div?.getBoundingClientRect().top
+            const newHeight = div?.clientHeight
 
             camera.aspect = newWidth / newHeight
             camera.updateProjectionMatrix()
@@ -73,9 +72,5 @@ const ThreeScene = () => {
         initRender()
     }, [])
 
-    // ... (rest of the code)
-
     return <div ref={containerRef} style={{ flex: 1 }} />
 }
-
-export default ThreeScene

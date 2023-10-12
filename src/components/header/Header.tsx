@@ -1,7 +1,7 @@
 import { indexRoutes } from '../../utils/indexRoutes'
 import { HeaderContainer, StyledLink } from './stylesHeader'
 
-export const Header = () => {
+export default function Header() {
     const Btn = (props: { text: string; path: string }) => {
         const { text, path } = props
         return (

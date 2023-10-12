@@ -1,13 +1,11 @@
 import { Canvas } from '@react-three/fiber'
-import { Box, OrbitControls } from '@react-three/drei'
-import { Cube } from './Cube'
 
-export function Scene() {
+import Cube from './Cube'
+
+export default function Scene() {
     return (
-        <Canvas style={{ backgroundColor: 'black' }}>
+        <Canvas style={{ backgroundColor: 'black' }} camera={{ fov: 40, position: [0, 0, 5] }}>
             <Cube />
-            <Box position={[2, 0, 0]} />
-            <OrbitControls />
         </Canvas>
     )
 }

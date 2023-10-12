@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
-import { Header } from './components/header/Header'
+import Header from './components/header/Header'
 
 import Home from './screens/home/Home'
 import FrameScreenVanilla from './screens/frameScreenVanilla/FrameScreenVanilla'
@@ -10,7 +10,7 @@ import { indexRoutes } from './utils/indexRoutes'
 
 import { AppContainer, BodyWrapper } from './stylesApp'
 
-const App: React.FC = () => {
+export default function App() {
     return (
         <AppContainer>
             <BrowserRouter>
@@ -26,5 +26,3 @@ const App: React.FC = () => {
         </AppContainer>
     )
 }
-
-export default App
