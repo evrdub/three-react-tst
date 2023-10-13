@@ -22,7 +22,7 @@ The aim of the project is to test the usage of the [THREE JS](https://threejs.or
 ## Init project
 
 ```sh
-git clone https://github.com/evrdub/three-react-tst
+git clone https://github.com/evrdub/three-react-tst.git
 cd three-react-tst
 npm i
 ```
