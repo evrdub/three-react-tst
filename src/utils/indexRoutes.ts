@@ -1,5 +1,5 @@
 export const indexRoutes: { [key: string]: string } = {
-    Home: 'home',
+    Home: '',
     Vanilla: 'vanilla-frame',
     ReactTF: 'react-tf-frame',
 }
