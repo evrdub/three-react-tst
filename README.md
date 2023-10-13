@@ -1,25 +1,25 @@
 # three-react-tst
 
-The aim of the project is to test the usage of the [THREE JS](https://threejs.org/) library inside a react project. The first goal was to make the canvas responsive. There are currently two ways of cretaing the canvas, one with vanilla THREE JS and the other with the [@react-three/fiber](https://www.npmjs.com/package/@react-three/fiber) and [@react-three/drei](https://www.npmjs.com/package/@react-three/drei) node packages. 
+The aim of the project is to test the usage of the [THREE JS](https://threejs.org/) library inside a react project. The first goal was to make the canvas responsive. There are currently two ways of creating the canvas, one with vanilla THREE JS and the other with the [@react-three/fiber](https://www.npmjs.com/package/@react-three/fiber) and [@react-three/drei](https://www.npmjs.com/package/@react-three/drei) node packages. 
 
 ---
 
 ## Table of Contents
 
-- [Prerequisites](#prereq)
-- [Init project](#init)
-- [Run dev](#run)
-<!-- - [Build release](#build) -->
+- Prerequisites
+- Init project
+- Run dev
+- Build release
 
 ---
 
-## Prerequisites {#prereq}
+## Prerequisites
 
 * [node.js](https://nodejs.org/fr)
 
 ---
 
-## Init project {#init}
+## Init project
 
 ```sh
 git clone https://github.com/evrdub/three-react-tst
@@ -28,7 +28,7 @@ npm i
 ```
 ---
 
-## Run dev {#run}
+## Run dev
 
 * In project directory: 
 
@@ -36,10 +36,11 @@ npm i
 run.bat
 ```
 
-<!-- ---
+---
 
-## Build release {#build}
+## Build release 
+
 * Run in project folder : 
 ```sh
 build.bat
-``` -->
+```
