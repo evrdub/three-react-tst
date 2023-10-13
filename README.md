@@ -1,27 +1,45 @@
-# React + TypeScript + Vite
+# three-react-tst
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The aim of the project is to test the usage of the [THREE JS](https://threejs.org/) library inside a react project. The first goal was to make the canvas responsive. There are currently two ways of cretaing the canvas, one with vanilla THREE JS and the other with the [@react-three/fiber](https://www.npmjs.com/package/@react-three/fiber) and [@react-three/drei](https://www.npmjs.com/package/@react-three/drei) node packages. 
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Table of Contents
 
-## Expanding the ESLint configuration
+- [Prerequisites](#prereq)
+- [Init project](#init)
+- [Run dev](#run)
+<!-- - [Build release](#build) -->
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+---
 
-- Configure the top-level `parserOptions` property like this:
+## Prerequisites {#prereq}
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
+* [node.js](https://nodejs.org/fr)
+
+---
+
+## Init project {#init}
+
+```sh
+git clone https://github.com/evrdub/three-react-tst
+cd three-react-tst
+npm i
+```
+---
+
+## Run dev {#run}
+
+* In project directory: 
+
+```sh
+run.bat
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+<!-- ---
+
+## Build release {#build}
+* Run in project folder : 
+```sh
+build.bat
+``` -->
